@@ -1,0 +1,110 @@
+{
+  "forums": [
+    {
+      "id": "1",
+      "title": "Ankit and Mark",
+      "messages": ["1", "2", "3"],
+      "members": ["1", "2"]
+    },
+    {
+      "id": "2",
+      "title": "Only Mark Forum",
+      "messages": ["4"],
+      "members": ["2"]
+    },
+    {
+      "id": "3",
+      "title": "Mark and Steve Forum",
+      "messages": ["5", "6"],
+      "members": ["2", "3"]
+    },
+    {
+      "id": "4",
+      "title": "All Forum",
+      "messages": ["7", "8", "9"],
+      "members": ["1", "2", "3"]
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "forumId": "1",
+      "timestamp": "2020-07-01T00:00:00Z",
+      "userId": "1",
+      "text": "Hello, I am Ankit"
+    },
+    {
+      "id": "2",
+      "forumId": "1",
+      "timestamp": "2020-07-02T00:00:00Z",
+      "userId": "2",
+      "text": "Hi, I am Mark"
+    },
+    {
+      "id": "3",
+      "forumId": "1",
+      "timestamp": "2020-07-03T00:00:00Z",
+      "userId": "1",
+      "text": "Hi Mark, thanks!"
+    },
+    {
+      "id": "4",
+      "forumId": "2",
+      "timestamp": "2020-07-04T00:00:00Z",
+      "userId": "2",
+      "text": "Hi, I am Mark in Mark forum"
+    },
+    {
+      "id": "5",
+      "forumId": "3",
+      "timestamp": "2020-07-05T00:00:00Z",
+      "userId": "3",
+      "text": "Hi, I am Steve in Steve forum"
+    },
+    {
+      "id": "6",
+      "forumId": "3",
+      "timestamp": "2020-07-06T00:00:00Z",
+      "userId": "2",
+      "text": "Hi, I am Mark in Steve forum"
+    },
+    {
+      "id": "7",
+      "forumId": "4",
+      "timestamp": "2020-07-07T00:00:00Z",
+      "userId": "3",
+      "text": "Hi, I am Steve in All forum"
+    },
+    {
+      "id": "8",
+      "forumId": "4",
+      "timestamp": "2020-07-08T00:00:00Z",
+      "userId": "2",
+      "text": "Hi, I am Mark in All forum"
+    },
+    {
+      "id": "9",
+      "forumId": "4",
+      "timestamp": "2020-07-09T00:00:00Z",
+      "userId": "1",
+      "text": "Hello, I am Ankit in All forum"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "img": "https://via.placeholder.com/150",
+      "name": "Ankit"
+    },
+    {
+      "id": "2",
+      "img": "https://via.placeholder.com/150",
+      "name": "Mark"
+    },
+    {
+      "id": "3",
+      "img": "https://via.placeholder.com/150",
+      "name": "Steve"
+    }
+  ]
+}
