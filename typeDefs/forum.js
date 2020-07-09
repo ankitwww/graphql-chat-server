@@ -23,6 +23,8 @@ module.exports = gql`
     members: [User]
   }
 
+  # 'ForumInfo' type caters only id and title fields of a forum.
+  # This type is used for 'availableForums' Query where we want limited fields
   type ForumInfo {
     id: ID!
     title: String!

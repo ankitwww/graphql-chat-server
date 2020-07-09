@@ -13,10 +13,12 @@ module.exports = {
       let thisForum = Fixure_Data.forums.find(
         (forum) => forum.id == input.forumId
       );
+
+      //Message will be only added to forum if the user is already a member of
+      //the given forum
       if (thisForum.members.indexOf(USER_ID) > -1) {
         thisForum.messages.push(message.id);
         Fixure_Data.messages.push(message);
-        console.log(thisForum.messages);
         return message;
       } else {
         return null;
@@ -29,7 +31,6 @@ module.exports = {
         const user = Fixure_Data.users.find(
           (user) => user.id === parent.userId
         );
-        console.log(user);
         return user;
       } catch (error) {
         console.log(error);

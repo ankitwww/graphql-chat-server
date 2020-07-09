@@ -7,6 +7,8 @@ module.exports = {
         let isMember = forum.members.indexOf(USER_ID) >= 0;
         return !isMember;
       });
+
+      //Send only id and title - No need of members and messages
       return availableForums.map((forum) => {
         return {
           id: forum.id,
@@ -30,14 +32,15 @@ module.exports = {
     createForum: (_, { input }, { Fixure_Data, USER_ID }) => {
       const forum = { ...input, id: uuid.v4(), members: [], messages: [] };
       const thisUser = Fixure_Data.users.find((u) => u.id === USER_ID);
+      //When the forum is created - the user gets added to it by default
       forum.members.push(thisUser.id);
       Fixure_Data.forums.push(forum);
       return forum;
     },
     joinForum: (_, { id }, { Fixure_Data, USER_ID }) => {
-      console.log(id);
       const thisForum = Fixure_Data.forums.find((forum) => forum.id === id);
-      console.log(thisForum);
+
+      //We will only add the member if it is not present already
       if (thisForum.members.indexOf(USER_ID) === -1) {
         thisForum.members.push(USER_ID);
       }
