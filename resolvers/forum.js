@@ -28,7 +28,7 @@ module.exports = {
   },
   Mutation: {
     createForum: (_, { input }, { Fixure_Data, USER_ID }) => {
-      const forum = { ...input, id: uuid.v4(), members: [] };
+      const forum = { ...input, id: uuid.v4(), members: [], messages: [] };
       const thisUser = Fixure_Data.users.find((u) => u.id === USER_ID);
       forum.members.push(thisUser.id);
       Fixure_Data.forums.push(forum);
