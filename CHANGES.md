@@ -5,7 +5,7 @@
   - Forum Schema got new fields - "pendingMembers" & "isPrivate"
   - A new mutation "processMembershipRequest (input: requestInput)" - using this admin can approve/reject the joining request of given userId.
 
-```json
+```js
 
 {
     type Query {

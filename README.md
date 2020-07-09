@@ -18,7 +18,7 @@
 
 ### Schema
 
-```json
+```js
 
 {
     type Query {
